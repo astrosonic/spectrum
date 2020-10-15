@@ -48,3 +48,13 @@ func TX_BOLD(textobjc string) string { return "\u001b[1m" + textobjc + "\u001b[0
 func TX_UNDERLINE(textobjc string) string { return "\u001b[4m" + textobjc + "\u001b[0m" }
 
 func TX_INVERTED(textobjc string) string { return "\u001b[7m" + textobjc + "\u001b[0m" }
+
+// CLI
+
+func CLI_SUCCESS(textobjc string) string { return TX_BOLD(FR_GREEN("[SUCCESS] " + textobjc)) }
+
+func CLI_WARNING(textobjc string) string { return TX_BOLD(FR_YELLOW("[WARNING] " + textobjc)) }
+
+func CLI_FAILURE(textobjc string) string { return TX_BOLD(FR_RED("[FAILURE] " + textobjc)) }
+
+func CLI_DETAILS(textobjc string) string { return TX_BOLD(FR_BLUE("[DETAILS] " + textobjc)) }
