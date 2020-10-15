@@ -1,156 +1,50 @@
 /*
-Spectrum v0.0.1 by t0xic0der
-Last modified by Akashdeep Dhar, 00:05 UTC+05:30 15 October 2020
+Spectrum v0.1.0 by t0xic0der
+Last modified by Akashdeep Dhar, 13:05 UTC+05:30 15 October 2020
 */
 
 package spectrum
 
-// BACKGROUND + BOLD
+// BACKGROUND COLORING
 
-func BackBlkBold(textobjc string) string {
-	return string("\u001b[40;1m") + textobjc + string("\u001b[0m")
-}
+func BG_BLACK(textobjc string) string { return "\u001b[40m" + textobjc + "\u001b[0m" }
 
-func BackRedBold(textobjc string) string {
-	return string("\u001b[41;1m") + textobjc + string("\u001b[0m")
-}
+func BG_RED(textobjc string) string { return "\u001b[41m" + textobjc + "\u001b[0m" }
 
-func BackGrnBold(textobjc string) string {
-	return string("\u001b[42;1m") + textobjc + string("\u001b[0m")
-}
+func BG_GREEN(textobjc string) string { return "\u001b[42m" + textobjc + "\u001b[0m" }
 
-func BackYlwBold(textobjc string) string {
-	return string("\u001b[43;1m") + textobjc + string("\u001b[0m")
-}
+func BG_YELLOW(textobjc string) string { return "\u001b[43m" + textobjc + "\u001b[0m" }
 
-func BackBluBold(textobjc string) string {
-	return string("\u001b[44;1m") + textobjc + string("\u001b[0m")
-}
+func BG_BLUE(textobjc string) string { return "\u001b[44m" + textobjc + "\u001b[0m" }
 
-func BackMgtBold(textobjc string) string {
-	return string("\u001b[45;1m") + textobjc + string("\u001b[0m")
-}
+func BG_MAGENTA(textobjc string) string { return "\u001b[45m" + textobjc + "\u001b[0m" }
 
-func BackCynBold(textobjc string) string {
-	return string("\u001b[46;1m") + textobjc + string("\u001b[0m")
-}
+func BG_CYAN(textobjc string) string { return "\u001b[46m" + textobjc + "\u001b[0m" }
 
-func BackWitBold(textobjc string) string {
-	return string("\u001b[47;1m") + textobjc + string("\u001b[0m")
-}
+func BG_WHITE(textobjc string) string { return "\u001b[47m" + textobjc + "\u001b[0m" }
 
-// BACKGROUND + REGULAR
+// FOREGROUND COLORING
 
-func BackBlkRglr(textobjc string) string {
-	return string("\u001b[40m") + textobjc + string("\u001b[0m")
-}
+func FR_BLACK(textobjc string) string { return "\u001b[30m" + textobjc + "\u001b[0m" }
 
-func BackRedRglr(textobjc string) string {
-	return string("\u001b[41m") + textobjc + string("\u001b[0m")
-}
+func FR_RED(textobjc string) string { return "\u001b[31m" + textobjc + "\u001b[0m" }
 
-func BackGrnRglr(textobjc string) string {
-	return string("\u001b[42m") + textobjc + string("\u001b[0m")
-}
+func FR_GREEN(textobjc string) string { return "\u001b[32m" + textobjc + "\u001b[0m" }
 
-func BackYlwRglr(textobjc string) string {
-	return string("\u001b[43m") + textobjc + string("\u001b[0m")
-}
+func FR_YELLOW(textobjc string) string { return "\u001b[33m" + textobjc + "\u001b[0m" }
 
-func BackBluRglr(textobjc string) string {
-	return string("\u001b[44m") + textobjc + string("\u001b[0m")
-}
+func FR_BLUE(textobjc string) string { return "\u001b[34m" + textobjc + "\u001b[0m" }
 
-func BackMgtRglr(textobjc string) string {
-	return string("\u001b[45m") + textobjc + string("\u001b[0m")
-}
+func FR_MAGENTA(textobjc string) string { return "\u001b[35m" + textobjc + "\u001b[0m" }
 
-func BackCynRglr(textobjc string) string {
-	return string("\u001b[46m") + textobjc + string("\u001b[0m")
-}
+func FR_CYAN(textobjc string) string { return "\u001b[36m" + textobjc + "\u001b[0m" }
 
-func BackWitRglr(textobjc string) string {
-	return string("\u001b[47m") + textobjc + string("\u001b[0m")
-}
-
-// FOREGROUND + BOLD
-
-func ForeBlkBold(textobjc string) string {
-	return string("\u001b[30;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeRedBold(textobjc string) string {
-	return string("\u001b[31;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeGrnBold(textobjc string) string {
-	return string("\u001b[32;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeYlwBold(textobjc string) string {
-	return string("\u001b[33;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeBluBold(textobjc string) string {
-	return string("\u001b[34;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeMgtBold(textobjc string) string {
-	return string("\u001b[35;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeCynBold(textobjc string) string {
-	return string("\u001b[36;1m") + textobjc + string("\u001b[0m")
-}
-
-func ForeWitBold(textobjc string) string {
-	return string("\u001b[37;1m") + textobjc + string("\u001b[0m")
-}
-
-// FOREGROUND + REGULAR
-
-func ForeBlkRglr(textobjc string) string {
-	return string("\u001b[30m") + textobjc + string("\u001b[0m")
-}
-
-func ForeRedRglr(textobjc string) string {
-	return string("\u001b[31m") + textobjc + string("\u001b[0m")
-}
-
-func ForeGrnRglr(textobjc string) string {
-	return string("\u001b[32m") + textobjc + string("\u001b[0m")
-}
-
-func ForeYlwRglr(textobjc string) string {
-	return string("\u001b[33m") + textobjc + string("\u001b[0m")
-}
-
-func ForeBluRglr(textobjc string) string {
-	return string("\u001b[34m") + textobjc + string("\u001b[0m")
-}
-
-func ForeMgtRglr(textobjc string) string {
-	return string("\u001b[35m") + textobjc + string("\u001b[0m")
-}
-
-func ForeCynRglr(textobjc string) string {
-	return string("\u001b[36m") + textobjc + string("\u001b[0m")
-}
-
-func ForeWitRglr(textobjc string) string {
-	return string("\u001b[37m") + textobjc + string("\u001b[0m")
-}
+func FR_WHITE(textobjc string) string { return "\u001b[37m" + textobjc + "\u001b[0m" }
 
 // CUSTOM STYLING
 
-func ForeBold(textobjc string) string {
-	return string("\u001b[1m") + textobjc + string("\u001b[0m")
-}
+func TX_BOLD(textobjc string) string { return "\u001b[1m" + textobjc + "\u001b[0m" }
 
-func ForeUndl(textobjc string) string {
-	return string("\u001b[4m") + textobjc + string("\u001b[0m")
-}
+func TX_UNDERLINE(textobjc string) string { return "\u001b[4m" + textobjc + "\u001b[0m" }
 
-func ForeInvr(textobjc string) string {
-	return string("\u001b[7m") + textobjc + string("\u001b[0m")
-}
+func TX_INVERTED(textobjc string) string { return "\u001b[7m" + textobjc + "\u001b[0m" }
