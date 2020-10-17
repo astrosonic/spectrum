@@ -5,10 +5,6 @@ Last modified by mr-tafreshi, 13:56 UTC+03:30 17 October 2020
 
 package spectrum
 
-import (
-    "strings"
-)
-
 // BACKGROUND COLORING
 
 func BG_BLACK(textobjc string) string { return "\u001b[40m" + textobjc + "\u001b[0m" }
@@ -53,4 +49,4 @@ func TX_UNDERLINE(textobjc string) string { return "\u001b[4m" + textobjc + "\u0
 
 func TX_INVERTED(textobjc string) string { return "\u001b[7m" + textobjc + "\u001b[0m" }
 
-func HD_SUCCESS(textobjc string) string { return FR_GREEN(TX_BOLD("[SUCCESS] " + strings.ToUpper(textobjc))) }
+func HD_SUCCESS(textobjc string) string { return FR_GREEN(TX_BOLD("[SUCCESS] " + textobjc)) }
