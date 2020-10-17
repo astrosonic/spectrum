@@ -4,6 +4,8 @@ Welcome! 👋 Thank you for taking the time to contribute, feel free to ask ques
 
 We love to receive contributions from the community and hear your opinions! We want to make contributing to Spectrum as easily as it can be.
 
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+
 ## How can you help us?
 
 * Report a bug
