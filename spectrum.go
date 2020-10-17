@@ -1,6 +1,6 @@
 /*
-Spectrum v0.1.0 by t0xic0der
-Last modified by Akashdeep Dhar, 13:05 UTC+05:30 15 October 2020
+Spectrum v0.1.0 by t0xic0der, mr-tafreshi
+Last modified by mr-tafreshi, 13:56 UTC+03:30 17 October 2020
 */
 
 package spectrum
@@ -48,3 +48,5 @@ func TX_BOLD(textobjc string) string { return "\u001b[1m" + textobjc + "\u001b[0
 func TX_UNDERLINE(textobjc string) string { return "\u001b[4m" + textobjc + "\u001b[0m" }
 
 func TX_INVERTED(textobjc string) string { return "\u001b[7m" + textobjc + "\u001b[0m" }
+
+func HD_SUCCESS(textobjc string) string { return FR_GREEN(TX_BOLD("[SUCCESS] " + textobjc)) }
