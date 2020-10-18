@@ -50,3 +50,5 @@ func TX_UNDERLINE(textobjc string) string { return "\u001b[4m" + textobjc + "\u0
 func TX_INVERTED(textobjc string) string { return "\u001b[7m" + textobjc + "\u001b[0m" }
 
 func HD_SUCCESS(textobjc string) string { return FR_GREEN(TX_BOLD("[SUCCESS] " + textobjc)) }
+
+func HD_FAILURE(textobjc string) string { return FR_RED(TX_BOLD("[FAILURE] " + textobjc)) }
