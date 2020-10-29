@@ -54,3 +54,5 @@ func HD_SUCCESS(textobjc string) string { return FR_GREEN(TX_BOLD("[SUCCESS] " +
 func HD_FAILURE(textobjc string) string { return FR_RED(TX_BOLD("[FAILURE] " + textobjc)) }
 
 func HD_DETAILS(textobjc string) string { return FR_BLUE(TX_BOLD("[DETAILS] " + textobjc)) }
+
+func HD_WARNING(textobjc string) string { return FR_YELLOW(TX_BOLD("[WARNING] " + textobjc)) }
